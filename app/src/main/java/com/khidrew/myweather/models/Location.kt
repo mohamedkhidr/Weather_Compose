@@ -13,7 +13,7 @@ data class Location(
     val rank:Int,
     @SerializedName("LocalizedName")
     val localizedName:String,
-    @SerializedName("englishName")
+    @SerializedName("EnglishName")
     val englishName:String,
     @SerializedName("PrimaryPostalCode")
     val primaryPostalCode:String,

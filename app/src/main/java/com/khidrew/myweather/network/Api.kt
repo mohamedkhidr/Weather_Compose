@@ -14,7 +14,7 @@ const val APIKEY = "9M33DBUwCKs6ZdYKgipGALM4b8UWHJ9p"
 interface Api {
     @GET("locations/v1/cities/search")
     suspend fun searchLocation(
-        @Query("apiKey") apiKey:String = APIKEY ,
+        @Query("apikey") apiKey:String = APIKEY ,
         @Query("q") query:String
     ) : Response<List<Location>>
 
@@ -23,8 +23,8 @@ interface Api {
     @GET("forecasts/v1/daily/5day/{location_key}")
     suspend fun getDailyForecasts(
         @Path("location_key") locationKey:String,
-        @Query("apiKey") apiKey: String = APIKEY,
-        @Query("Metric") metric: Boolean = true
+        @Query("apikey") apiKey: String = APIKEY,
+        @Query("metric") metric: Boolean = true
     ): Response<DailyForecasts>
 
 
@@ -32,7 +32,7 @@ interface Api {
     @GET("forecasts/v1/hourly/12hour/{location_key}")
     suspend fun getHourlyForecasts(
         @Path("location_key") locationKey: String,
-        @Query("apiKey") apiKey: String = APIKEY,
+        @Query("apikey") apiKey: String = APIKEY,
         @Query("metric") metric: Boolean = true
     ):Response<List<HourlyForecast>>
 }

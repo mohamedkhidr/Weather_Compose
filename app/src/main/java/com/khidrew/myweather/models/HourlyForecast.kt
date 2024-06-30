@@ -16,6 +16,6 @@ data class HourlyForecast(
     @SerializedName("IsDayLight")
     val isDayLight: Boolean ,
     @SerializedName("Temperature")
-    val temperature:Temperature
+    val temperature:Value
 
 )

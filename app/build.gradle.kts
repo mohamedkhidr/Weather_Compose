@@ -75,7 +75,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
 
     // Coil
-//    implementation("io.coil-kt:coil-compose:$koinAndroidVersion")
+    implementation("io.coil-kt:coil-compose:2.6.0")
 
 
     // Navigation
