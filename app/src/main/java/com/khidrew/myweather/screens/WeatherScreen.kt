@@ -213,7 +213,7 @@ viewModel: WeatherViewModel = viewModel()
                             modifier = Modifier.size(70.dp),
                             model = ImageRequest.Builder(LocalContext.current)
                                 .data("https://developer.accuweather.com/sites/default/files/${forecast.day.icon.fixIcon()}-s.png").build(),
-                            contentDescription = null,
+                            contentDescription = "",
                             contentScale = ContentScale.Fit
                         )
                     }
